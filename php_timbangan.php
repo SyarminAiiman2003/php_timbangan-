@@ -2,25 +2,25 @@
 <title> PHP-Timbangan </title>
 
 <body>
-<form action="PHP_timbangan.php" method="POST"> //kesalahan panggil fail
-Masukkan berat anda <input type="TEXT" name="nilai" value="0" /> //kesalahan pada "nilai" 
+<form action="php_timbangan.php" method="POST">
+Masukkan berat anda <input type="TEXT" name="nilai1" value="0" />
 <input type="submit" value="Hasil" />
 <form>
 	
-	<?php
-	if (POST[nilai] >= 80) //kesalahan
+	<?PHP
+	if ($_POST[nilai1] >= 80) 
 	{
-	 $result = "Anda Berat"
+	 $result = "Anda Berat";
 	}
-	ELSE 
+	else
 	{
 	 $result = "Berat anda Adalah Normal";
 	}
-	>                     //kesalahan pada penutup
+
+	?> 
 	Mesej Untuk Anda : 
 	<?PHP
 	ECHO "$result";
 	?>
-
 </body>
 </html>
